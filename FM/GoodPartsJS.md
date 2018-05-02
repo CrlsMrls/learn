@@ -13,7 +13,8 @@ Premature optimization is the root of all evil.
 Good use of style can help reduce the occurrence of errors
 programs must communicate clearly to people as well to computers
 
-## Curly braces 
+
+## Curly braces
 Always putting curly braces at right.
 
 The next code returns undefined
@@ -31,7 +32,8 @@ if (a) b(); c();
 
 In previous example, `c()` is always executed, not as an `else`.
 
-## Semicolon 
+
+## Semicolon
 JS does an automatic semicolon insertion. But never miss semicolons
 
 
