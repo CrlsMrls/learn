@@ -13,7 +13,7 @@ Premature optimization is the root of all evil.
 Good use of style can help reduce the occurrence of errors
 programs must communicate clearly to people as well to computers
 
-## Curly braces
+## Curly braces 
 Always putting curly braces at right.
 
 The next code returns undefined
@@ -31,8 +31,9 @@ if (a) b(); c();
 
 In previous example, `c()` is always executed, not as an `else`.
 
-## Semicolon
+## Semicolon 
 JS does an automatic semicolon insertion. But never miss semicolons
+
 
 ## IFFE
 iffe should have the parentesis wraping the function call:
@@ -144,7 +145,7 @@ The function statement is a short-hand for a `var` statement with a function val
 
 Expression vs statement: if the first token in a statement is `function`, then it is a function statement. Otherwise is a function expression.
 
-## arguments
+## arguments 
 arguments contains all of the arguments from the invocation. It is an array-like object, it contains the `length` property but not all the other nice methods of arrays.
 
 It has a weird interaction with parameters. If you change arguments value, the first parameter also changes. This makes one of the most hated features for people who make JS engines.
