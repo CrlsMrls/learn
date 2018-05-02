@@ -33,7 +33,7 @@ if (a) b(); c();
 In previous example, `c()` is always executed, not as an `else`.
 
 
-## Semicolon
+## Semicolon
 JS does an automatic semicolon insertion. But never miss semicolons
 
 
@@ -147,7 +147,7 @@ The function statement is a short-hand for a `var` statement with a function val
 
 Expression vs statement: if the first token in a statement is `function`, then it is a function statement. Otherwise is a function expression.
 
-## arguments 
+## arguments 
 arguments contains all of the arguments from the invocation. It is an array-like object, it contains the `length` property but not all the other nice methods of arrays.
 
 It has a weird interaction with parameters. If you change arguments value, the first parameter also changes. This makes one of the most hated features for people who make JS engines.
@@ -180,9 +180,9 @@ It is a consecuence of functions can nest and functions are values.
 
 Context of an inner function includes the scope of the outer function, an inner function enjoys that context even after the parent functions have returned.
 
-Lisp[1958] dynamic scope
-Algol 60 [1960] functions are not values
-C [1972] functions cannot be nested
+- **Lisp[1958]** dynamic scope
+- **Algol 60 [1960]** functions are not values
+- **C [1972]** functions cannot be nested
 
 The way to implement it was actually trivial: Don't allocate all of the activation records on a Stack, allocate them on a heap. Get a good garbage collector.
 
@@ -279,16 +279,17 @@ Object.create = function (object, properties) {
 Meta Object API `Object.defineProperty(object, key, descriptor)`
 
 Where the descriptor is:
-- value: any JS value
-- writeable: boolean
-- enumerable: boolean
-- configurable: boolean
-- get: function() { ... return value;}
-- set: function(value) { ... }
+- **value:** any JS value
+- **writeable:** boolean
+- **enumerable:** boolean
+- **configurable:** boolean
+- **get:** function() { ... return value;}
+- **set:** function(value) { ... }
 
-Object.preventExtensions(object)
-Object.seal(object)
-Object.freeze(object)
+
+- `Object.preventExtensions(object)`
+- `Object.seal(object)`
+- `Object.freeze(object)`
 
 
 
